@@ -1,0 +1,4 @@
+services:
+#    partage_partage.example:
+#        class: Partage\PartageBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

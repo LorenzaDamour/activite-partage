@@ -1,0 +1,8 @@
+partage_partage:
+    resource: "@PartagePartageBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
