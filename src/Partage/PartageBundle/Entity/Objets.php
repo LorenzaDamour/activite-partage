@@ -5,7 +5,7 @@ use Doctrine\ORM\Mapping AS ORM;
 /**
  * @ORM\Entity
  */
-class objets
+class Objets
 {
     /**
      * @ORM\Id
@@ -30,13 +30,13 @@ class objets
     private $tel;
 
     /**
-     * @ORM\ManyToOne(targetEntity="particulier", inversedBy="objets")
+     * @ORM\ManyToOne(targetEntity="Particulier", inversedBy="objets")
      * @ORM\JoinColumn(name="particulier_id", referencedColumnName="id")
      */
     private $particulier;
 
     /**
-     * @ORM\ManyToMany(targetEntity="association", mappedBy="objets")
+     * @ORM\ManyToMany(targetEntity="Association", mappedBy="objets")
      */
     private $association;
 }

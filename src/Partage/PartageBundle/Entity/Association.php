@@ -1,11 +1,12 @@
 <?php
 namespace Partage\PartageBundle\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
  */
-class association
+class Association
 {
     /**
      * @ORM\Id
@@ -30,7 +31,7 @@ class association
     private $tel;
 
     /**
-     * @ORM\ManyToMany(targetEntity="objets", inversedBy="association")
+     * @ORM\ManyToMany(targetEntity="Objets", inversedBy="Association")
      * @ORM\JoinTable(
      *     name="objets_Has_association",
      *     joinColumns={@ORM\JoinColumn(name="association_id", referencedColumnName="id", nullable=false)},
@@ -38,4 +39,10 @@ class association
      * )
      */
     private $objets;
+
+    /**
+     * @ORM\OneToOne(targetEntity="User", inversedBy="id")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user_id;
 }

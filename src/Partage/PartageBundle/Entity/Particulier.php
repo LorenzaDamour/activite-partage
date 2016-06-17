@@ -5,7 +5,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  */
-class particulier
+class Particulier
 {
     /**
      * @ORM\Id
@@ -35,7 +35,13 @@ class particulier
     private $tel;
 
     /**
-     * @ORM\OneToMany(targetEntity="objets", mappedBy="particulier")
+     * @ORM\OneToMany(targetEntity="Objets", mappedBy="particulier")
      */
     private $objets;
+
+    /**
+     * @ORM\OneToOne(targetEntity="User", inversedBy="id")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user_id;
 }
