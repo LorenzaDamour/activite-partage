@@ -7,8 +7,31 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>
-    </body>
-</html>
+        {% block header %}
+            <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+                <a class="navbar-brand" href="/">Dons</a>
+                <ul class="nav navbar-nav pull-md-right">
+                    <li class="nav-item">
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                            {{ 'Connecté en tant que:'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
+                            
+                        {% else %}
+                            <a class="nav-link" href="{{ path('fos_user_security_login') }}">{{ 'Connexion'|trans({}, 'FOSUserBundle') }}</a>
+                        {% endif %}
+                    </li>
+                    <li class="nav-item">
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                            <a class="nav-link" href="{{ path('fos_user_security_logout') }}">
+                                {{ 'Se deconnecter'|trans({}, 'FOSUserBundle') }}
+                            </a>
+                        {% else %}
+                            <a class="nav-link" href="{{ path('fos_user_registration_register') }}">{{ 'Inscription'|trans({}, 'FOSUserBundle') }}</a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </nav>{% endblock %}
+            {% block body %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+            <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>
+        </body>
+    </html>
