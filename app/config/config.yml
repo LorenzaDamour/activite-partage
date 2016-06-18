@@ -71,3 +71,8 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: Partage\PartageBundle\Entity\User
+    registration:
+            form:
+                type: Partage\PartageBundle\Form\RegistrationType
+            confirmation:
+                enabled: true
