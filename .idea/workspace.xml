@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70868c34-1705-4d46-adba-523a81398f5f" name="Default" comment="bootstrap on forms">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/BootstrapTemplate/bootstrap.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Controller/RegistrationController.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Controller/RegistrationController.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Form/RegistrationType.php" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Form/RegistrationType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Registration/register_content.html.twig" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Registration/register_content.html.twig" />
     </list>
     <ignored path="activite-partage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +28,7 @@
       <file leaf-file-name="register_content.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Registration/register_content.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="0">
               <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
               <folding />
             </state>
@@ -50,26 +45,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationType.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegistrationType.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Form/RegistrationType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
               <caret line="16" column="29" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="e#46#86#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Controller/RegistrationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
-              <folding>
-                <element signature="e#6#88#0#PHP" expanded="true" />
-                <element signature="e#135#189#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -668,7 +650,7 @@
       <workItem from="1466263534050" duration="118000" />
       <workItem from="1466263722367" duration="647000" />
       <workItem from="1466264382057" duration="2387000" />
-      <workItem from="1466312933280" duration="2165000" />
+      <workItem from="1466312933280" duration="2394000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrap on forms">
       <created>1466261496823</created>
@@ -681,7 +663,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15753000" />
+    <option name="totallyTimeSpent" value="15982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1079,7 +1061,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Registration/register_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="0">
           <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding />
         </state>
@@ -1101,16 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Form/RegistrationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#46#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -1121,11 +1093,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Form/RegistrationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <element signature="e#135#189#0#PHP" expanded="true" />
+            <element signature="e#46#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
