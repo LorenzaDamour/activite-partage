@@ -9,11 +9,11 @@
     <body>
         {% block header %}
             <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-                <a class="navbar-brand" href="/">Dons</a>
+                <a class="navbar-brand" href="#">Dons</a>
                 <ul class="nav navbar-nav pull-md-right">
                     <li class="nav-item">
                         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                            {{ 'Connecté en tant que:'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
+                            <a class="nav-link" href="{{ path('fos_user_profile_show') }}"> Connecté en tant que: {{app.user.username }}</a>
                             
                         {% else %}
                             <a class="nav-link" href="{{ path('fos_user_security_login') }}">{{ 'Connexion'|trans({}, 'FOSUserBundle') }}</a>

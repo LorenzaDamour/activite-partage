@@ -74,5 +74,3 @@ fos_user:
     registration:
             form:
                 type: Partage\PartageBundle\Form\RegistrationType
-            confirmation:
-                enabled: true
