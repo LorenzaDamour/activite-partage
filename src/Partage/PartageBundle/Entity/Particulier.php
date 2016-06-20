@@ -42,5 +42,5 @@ class Particulier
     /**
      * @ORM\OneToOne(targetEntity="User", inversedBy="id")
      */
-    private $user_id;
+    private $user;
 }

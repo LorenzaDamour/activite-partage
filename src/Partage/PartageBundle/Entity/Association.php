@@ -43,5 +43,5 @@ class Association
     /**
      * @ORM\OneToOne(targetEntity="User", inversedBy="id")
      */
-    private $user_id;
+    private $user;
 }
