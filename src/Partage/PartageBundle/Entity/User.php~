@@ -18,15 +18,34 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
-
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $groupe;
     
     public function __construct()
     {
         parent::__construct();
         // your own logic
+    }
+
+    /**
+     * Set groupe
+     *
+     * @param string $groupe
+     *
+     * @return User
+     */
+    public function setGroupe($groupe)
+    {
+        $this->groupe = $groupe;
+
+        return $this;
+    }
+
+    /**
+     * Get groupe
+     *
+     * @return string
+     */
+    public function getGroupe()
+    {
+        return $this->groupe;
     }
 }
