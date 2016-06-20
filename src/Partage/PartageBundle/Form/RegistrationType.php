@@ -14,11 +14,12 @@ class RegistrationType extends AbstractType
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('groupe', ChoiceType::class, array(
+        $builder->add('roles', ChoiceType::class, array(
             'choices'  => array(
-                'Particulier' => '0',
-                'Association' => '1',
+                'Particulier' => 'ROLE_USER',
+                'Association' => 'ROLE_ADMIN',
             ),
+            'multiple' => true,
             'required'    => true,
             'attr'=> [
                 'class'=> 'form-control'

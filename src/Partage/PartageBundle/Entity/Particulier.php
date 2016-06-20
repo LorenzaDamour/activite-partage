@@ -40,7 +40,7 @@ class Particulier
     private $objets;
 
     /**
-     * @ORM\OneToOne(targetEntity="User", inversedBy="groupe")
+     * @ORM\OneToOne(targetEntity="User", inversedBy="id")
      */
-    private $groupe;
+    private $user_id;
 }
