@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Particulier</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ particulier.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ particulier.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ particulier.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ particulier.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Tel</th>
+                <td>{{ particulier.tel }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('particulier_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('particulier_edit', { 'id': particulier.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

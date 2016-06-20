@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Particulier list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Adresse</th>
+                <th>Tel</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for particulier in particuliers %}
+            <tr>
+                <td><a href="{{ path('particulier_show', { 'id': particulier.id }) }}">{{ particulier.id }}</a></td>
+                <td>{{ particulier.nom }}</td>
+                <td>{{ particulier.prenom }}</td>
+                <td>{{ particulier.adresse }}</td>
+                <td>{{ particulier.tel }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('particulier_show', { 'id': particulier.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('particulier_edit', { 'id': particulier.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('particulier_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
