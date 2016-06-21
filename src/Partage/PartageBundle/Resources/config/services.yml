@@ -6,3 +6,9 @@ services:
         class: Partage\PartageBundle\Form\RegistrationType
         tags:
             - { name: form.type, alias: app_user_registration }
+
+    partage_partage.user_registration_redirect:
+            class: Partage\PartageBundle\EventListener\UserRegisterListener
+            arguments: [ "@router" ]
+            tags:
+                - { name: kernel.event_subscriber }

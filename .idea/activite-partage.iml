@@ -38,6 +38,7 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/symfony/symfony/src/Symfony/Component/ClassLoader/Tests/Fixtures/fallback" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
