@@ -19,7 +19,6 @@ class ParticulierType extends AbstractType
             ->add('prenom')
             ->add('adresse')
             ->add('tel')
-            ->add('user')
         ;
     }
     

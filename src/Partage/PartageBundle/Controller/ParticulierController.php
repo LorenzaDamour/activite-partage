@@ -26,11 +26,16 @@ class ParticulierController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $particuliers = $em->getRepository('PartagePartageBundle:Particulier')->findAll();
+        $particuliers = $em->getRepository(
+            'PartagePartageBundle:Particulier'
+        )->findAll();
 
-        return $this->render('particulier/index.html.twig', array(
-            'particuliers' => $particuliers,
-        ));
+        return $this->render(
+            'particulier/index.html.twig',
+            array(
+                'particuliers' => $particuliers,
+            )
+        );
     }
 
     /**
@@ -41,8 +46,14 @@ class ParticulierController extends Controller
      */
     public function newAction(Request $request)
     {
+        $user_id = $this->getUser();
+        $user_id->getId();
         $particulier = new Particulier();
-        $form = $this->createForm('Partage\PartageBundle\Form\ParticulierType', $particulier);
+        $particulier->setUser($user_id);
+        $form = $this->createForm(
+            'Partage\PartageBundle\Form\ParticulierType',
+            $particulier
+        );
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -50,13 +61,19 @@ class ParticulierController extends Controller
             $em->persist($particulier);
             $em->flush();
 
-            return $this->redirectToRoute('particulier_show', array('id' => $particulier->getId()));
+            return $this->redirectToRoute(
+                'particulier_show',
+                array('id' => $particulier->getId())
+            );
         }
 
-        return $this->render('particulier/new.html.twig', array(
-            'particulier' => $particulier,
-            'form' => $form->createView(),
-        ));
+        return $this->render(
+            'particulier/new.html.twig',
+            array(
+                'particulier' => $particulier,
+                'form' => $form->createView(),
+            )
+        );
     }
 
     /**
@@ -69,10 +86,13 @@ class ParticulierController extends Controller
     {
         $deleteForm = $this->createDeleteForm($particulier);
 
-        return $this->render('particulier/show.html.twig', array(
-            'particulier' => $particulier,
-            'delete_form' => $deleteForm->createView(),
-        ));
+        return $this->render(
+            'particulier/show.html.twig',
+            array(
+                'particulier' => $particulier,
+                'delete_form' => $deleteForm->createView(),
+            )
+        );
     }
 
     /**
@@ -84,7 +104,10 @@ class ParticulierController extends Controller
     public function editAction(Request $request, Particulier $particulier)
     {
         $deleteForm = $this->createDeleteForm($particulier);
-        $editForm = $this->createForm('Partage\PartageBundle\Form\ParticulierType', $particulier);
+        $editForm = $this->createForm(
+            'Partage\PartageBundle\Form\ParticulierType',
+            $particulier
+        );
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
@@ -92,14 +115,20 @@ class ParticulierController extends Controller
             $em->persist($particulier);
             $em->flush();
 
-            return $this->redirectToRoute('particulier_edit', array('id' => $particulier->getId()));
+            return $this->redirectToRoute(
+                'particulier_edit',
+                array('id' => $particulier->getId())
+            );
         }
 
-        return $this->render('particulier/edit.html.twig', array(
-            'particulier' => $particulier,
-            'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
-        ));
+        return $this->render(
+            'particulier/edit.html.twig',
+            array(
+                'particulier' => $particulier,
+                'edit_form' => $editForm->createView(),
+                'delete_form' => $deleteForm->createView(),
+            )
+        );
     }
 
     /**
@@ -132,9 +161,13 @@ class ParticulierController extends Controller
     private function createDeleteForm(Particulier $particulier)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('particulier_delete', array('id' => $particulier->getId())))
+            ->setAction(
+                $this->generateUrl(
+                    'particulier_delete',
+                    array('id' => $particulier->getId())
+                )
+            )
             ->setMethod('DELETE')
-            ->getForm()
-        ;
+            ->getForm();
     }
 }
