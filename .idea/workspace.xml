@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/app/Resources/views/base.html.twig" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70868c34-1705-4d46-adba-523a81398f5f" name="Default" comment="bootstrap on forms" />
+    <list default="true" id="70868c34-1705-4d46-adba-523a81398f5f" name="Default" comment="bootstrap on forms">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" />
+    </list>
     <ignored path="activite-partage.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -30,7 +32,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#52#97#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +84,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-504">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
@@ -104,7 +108,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#46#86#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,9 +164,9 @@
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Objets.php" />
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Form/ParticulierType.php" />
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Controller/ObjetsController.php" />
-        <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" />
       </list>
     </option>
   </component>
@@ -176,7 +182,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
-    <option name="y" value="-776" />
+    <option name="y" value="24" />
     <option name="width" value="1280" />
     <option name="height" value="776" />
   </component>
@@ -816,7 +822,7 @@
       <workItem from="1466494386471" duration="101000" />
       <workItem from="1466494500618" duration="10561000" />
       <workItem from="1466578849953" duration="10896000" />
-      <workItem from="1466594814505" duration="18000" />
+      <workItem from="1466594814505" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrap on forms">
       <created>1466261496823</created>
@@ -829,10 +835,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51978000" />
+    <option name="totallyTimeSpent" value="52059000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-776" width="1280" height="776" extended-state="6" />
+    <frame x="1280" y="24" width="1280" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28671876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -970,6 +976,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,7 +1197,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#46#86#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,7 +1207,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#52#97#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1251,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
