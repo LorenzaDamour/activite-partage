@@ -41,7 +41,11 @@ class AssociationController extends Controller
      */
     public function newAction(Request $request)
     {
+        $user_id = $this->getUser();
+        $user_id->getId();
+
         $association = new Association();
+        $association->setUser($user_id);
         $form = $this->createForm('Partage\PartageBundle\Form\AssociationType', $association);
         $form->handleRequest($request);
 

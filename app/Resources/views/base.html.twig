@@ -11,10 +11,15 @@
             <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
                 <a class="navbar-brand" href="#">Dons</a>
                 <ul class="nav navbar-nav pull-md-right">
+                    {% if is_granted("ROLE_ASSOS") %}
+                    <li class="nav-item">
+                            <a class="nav-link" href="{{ path('fos_user_profile_edit') }}">Liste des dons</a>
+                    </li>
+                    {% endif %}
                     <li class="nav-item">
                         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                             <a class="nav-link" href="{{ path('fos_user_profile_edit') }}"> Connecté en tant que: {{app.user.username }}</a>
-                            
+
                         {% else %}
                             <a class="nav-link" href="{{ path('fos_user_security_login') }}">{{ 'Connexion'|trans({}, 'FOSUserBundle') }}</a>
                         {% endif %}
@@ -31,7 +36,7 @@
                 </ul>
             </nav>{% endblock %}
             {% block body %}
-                
+
             {% endblock %}
             {% block javascripts %}{% endblock %}
             <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>
