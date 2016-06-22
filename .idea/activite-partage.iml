@@ -39,6 +39,7 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/var/cache" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

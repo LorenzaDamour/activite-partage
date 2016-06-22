@@ -18,11 +18,11 @@ class AssociationType extends AbstractType
             ->add('nom')
             ->add('adresse')
             ->add('tel')
-            ->add('objets')
-            ->add('user')
+            //->add('objets')
+            //->add('user')
         ;
     }
-    
+
     /**
      * @param OptionsResolver $resolver
      */

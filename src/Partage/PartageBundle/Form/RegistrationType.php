@@ -25,6 +25,7 @@ class RegistrationType extends AbstractType
                 'class'=> 'form-control'
             ]
         ));
+
     }
 
     public function getParent()
