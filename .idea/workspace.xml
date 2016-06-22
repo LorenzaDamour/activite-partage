@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70868c34-1705-4d46-adba-523a81398f5f" name="Default" comment="bootstrap on forms">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Association.php" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Association.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Particulier.php" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Particulier.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/assoc1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/assoc2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/assoc3.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/objets/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/objets/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/objets/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/objets/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Objets.php" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Objets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Form/ObjetsType.php" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Form/ObjetsType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" afterPath="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" />
     </list>
     <ignored path="activite-partage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,17 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/bundles/framework/css/body.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Particulier.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Particulier.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Particulier.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="479">
@@ -55,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Association.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Association.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Association.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
@@ -68,11 +65,21 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+            <state relative-caret-position="168">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Objets.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Objets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,10 +140,11 @@
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Profile/show_content.html.twig" />
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/web/bundles/framework/css/body.css" />
-        <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Particulier.php" />
         <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Association.php" />
+        <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Objets.php" />
       </list>
     </option>
   </component>
@@ -280,6 +288,10 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="framework">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="images">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -752,24 +764,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="activite-partage">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -782,15 +776,16 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Partage/PartageBundle/Controller" />
+      <recent name="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/bundles/framework/images" />
       <recent name="C:\xampp\htdocs\activite-partage\app\Resources\views\BootstrapTemplate" />
       <recent name="C:\xampp\htdocs\activite-partage\app\Resources\views\formtemplate" />
       <recent name="C:\xampp\htdocs\activite-partage\app\Resources\views" />
       <recent name="C:\xampp\htdocs\activite-partage\app\Resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Partage/PartageBundle/Controller" />
-      <recent name="$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views" />
     </key>
   </component>
   <component name="RunManager">
@@ -854,7 +849,7 @@
       <workItem from="1466494014894" duration="359000" />
       <workItem from="1466494386471" duration="101000" />
       <workItem from="1466494500618" duration="10561000" />
-      <workItem from="1466578849953" duration="5609000" />
+      <workItem from="1466578849953" duration="6719000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrap on forms">
       <created>1466261496823</created>
@@ -867,7 +862,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46673000" />
+    <option name="totallyTimeSpent" value="47783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="24" width="1280" height="776" extended-state="6" />
@@ -925,13 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Objets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -1271,13 +1259,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Form/ParticulierType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Association.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Resources/views/Accueil/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        <state relative-caret-position="168">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Objets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,26 +1301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Form/ParticulierType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Particulier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="223" column="5" selection-start-line="220" selection-start-column="4" selection-end-line="223" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Partage/PartageBundle/Entity/Association.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>

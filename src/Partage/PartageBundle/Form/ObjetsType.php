@@ -16,8 +16,8 @@ class ObjetsType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add('adresse')
-            ->add('tel')
+            ->add('description')
+            ->add('categorie')
             ->add('particulier')
             ->add('association')
         ;
