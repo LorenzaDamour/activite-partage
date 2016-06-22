@@ -1,5 +1,6 @@
 <?php
 namespace Partage\PartageBundle\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -44,6 +45,7 @@ class Particulier
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;
+
     /**
      * Constructor
      */
@@ -214,5 +216,10 @@ class Particulier
     public function getUser()
     {
         return $this->user;
+    }
+
+    public function __toString()
+    {
+        return $this->nom;
     }
 }
