@@ -12,6 +12,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('PartagePartageBundle:Default:index.html.twig');
+        return $this->render('PartagePartageBundle:Accueil:index.html.twig');
     }
 }
