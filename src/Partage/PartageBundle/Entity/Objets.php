@@ -1,5 +1,6 @@
 <?php
 namespace Partage\PartageBundle\Entity;
+
 use Doctrine\ORM\Mapping AS ORM;
 
 /**
@@ -39,6 +40,7 @@ class Objets
      * @ORM\ManyToMany(targetEntity="Association", mappedBy="objets")
      */
     private $association;
+
     /**
      * Constructor
      */
@@ -136,8 +138,9 @@ class Objets
      *
      * @return Objets
      */
-    public function setParticulier(\Partage\PartageBundle\Entity\Particulier $particulier = null)
-    {
+    public function setParticulier(
+        \Partage\PartageBundle\Entity\Particulier $particulier = null
+    ) {
         $this->particulier = $particulier;
 
         return $this;
@@ -160,8 +163,9 @@ class Objets
      *
      * @return Objets
      */
-    public function addAssociation(\Partage\PartageBundle\Entity\Association $association)
-    {
+    public function addAssociation(
+        \Partage\PartageBundle\Entity\Association $association
+    ) {
         $this->association[] = $association;
 
         return $this;
@@ -172,8 +176,9 @@ class Objets
      *
      * @param \Partage\PartageBundle\Entity\Association $association
      */
-    public function removeAssociation(\Partage\PartageBundle\Entity\Association $association)
-    {
+    public function removeAssociation(
+        \Partage\PartageBundle\Entity\Association $association
+    ) {
         $this->association->removeElement($association);
     }
 
