@@ -8,8 +8,8 @@
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
-                <th>Adresse</th>
-                <th>Tel</th>
+                <th>Description</th>
+                <th>Categorie</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -18,8 +18,8 @@
             <tr>
                 <td><a href="{{ path('objets_show', { 'id': objet.id }) }}">{{ objet.id }}</a></td>
                 <td>{{ objet.nom }}</td>
-                <td>{{ objet.adresse }}</td>
-                <td>{{ objet.tel }}</td>
+                <td>{{ objet.description }}</td>
+                <td>{{ objet.categorie }}</td>
                 <td>
                     <ul>
                         <li>

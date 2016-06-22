@@ -18,17 +18,18 @@ class ParticulierType extends AbstractType
             ->add('nom')
             ->add('prenom')
             ->add('adresse')
-            ->add('tel')
-        ;
+            ->add('tel');
     }
-    
+
     /**
      * @param OptionsResolver $resolver
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(array(
-            'data_class' => 'Partage\PartageBundle\Entity\Particulier'
-        ));
+        $resolver->setDefaults(
+            array(
+                'data_class' => 'Partage\PartageBundle\Entity\Particulier',
+            )
+        );
     }
 }

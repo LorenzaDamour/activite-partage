@@ -1,5 +1,6 @@
 <?php
 namespace Partage\PartageBundle\Entity;
+
 use Doctrine\ORM\Mapping AS ORM;
 
 /**
@@ -22,12 +23,12 @@ class Objets
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    private $adresse;
+    private $description;
 
     /**
      * @ORM\Column(type="string", nullable=true)
      */
-    private $tel;
+    private $categorie;
 
     /**
      * @ORM\ManyToOne(targetEntity="Particulier", inversedBy="objets")
@@ -39,6 +40,7 @@ class Objets
      * @ORM\ManyToMany(targetEntity="Association", mappedBy="objets")
      */
     private $association;
+
     /**
      * Constructor
      */
@@ -84,13 +86,13 @@ class Objets
     /**
      * Set adresse
      *
-     * @param string $adresse
+     * @param string $description
      *
      * @return Objets
      */
-    public function setAdresse($adresse)
+    public function setDescription($description)
     {
-        $this->adresse = $adresse;
+        $this->description = $description;
 
         return $this;
     }
@@ -100,21 +102,21 @@ class Objets
      *
      * @return string
      */
-    public function getAdresse()
+    public function getDescription()
     {
-        return $this->adresse;
+        return $this->description;
     }
 
     /**
      * Set tel
      *
-     * @param string $tel
+     * @param string $categorie
      *
      * @return Objets
      */
-    public function setTel($tel)
+    public function setCategorie($categorie)
     {
-        $this->tel = $tel;
+        $this->categorie = $categorie;
 
         return $this;
     }
@@ -124,9 +126,9 @@ class Objets
      *
      * @return string
      */
-    public function getTel()
+    public function getCategorie()
     {
-        return $this->tel;
+        return $this->categorie;
     }
 
     /**
@@ -136,8 +138,9 @@ class Objets
      *
      * @return Objets
      */
-    public function setParticulier(\Partage\PartageBundle\Entity\Particulier $particulier = null)
-    {
+    public function setParticulier(
+        \Partage\PartageBundle\Entity\Particulier $particulier = null
+    ) {
         $this->particulier = $particulier;
 
         return $this;
@@ -160,8 +163,9 @@ class Objets
      *
      * @return Objets
      */
-    public function addAssociation(\Partage\PartageBundle\Entity\Association $association)
-    {
+    public function addAssociation(
+        \Partage\PartageBundle\Entity\Association $association
+    ) {
         $this->association[] = $association;
 
         return $this;
@@ -172,8 +176,9 @@ class Objets
      *
      * @param \Partage\PartageBundle\Entity\Association $association
      */
-    public function removeAssociation(\Partage\PartageBundle\Entity\Association $association)
-    {
+    public function removeAssociation(
+        \Partage\PartageBundle\Entity\Association $association
+    ) {
         $this->association->removeElement($association);
     }
 
